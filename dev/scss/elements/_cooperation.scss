@@ -7,7 +7,7 @@
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 20px 20px;
   }
 
   i {
@@ -42,6 +42,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: $getgadgetColor;
-    padding-bottom: 10px;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: rgba(0, 122, 61, 0.05);
+    }
   }
 }

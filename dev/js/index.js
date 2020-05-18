@@ -71,12 +71,13 @@ $(() => {
 
     offerMenu.mouseleave(() => { dropMenu.slideUp(100) });
 
-    const textiles = $('.textiles');
-
-    textiles.on('click', () => {
-        textiles.next().toggle();
-    });
-
+    const order = $('.order');
+    order.next().hide();
+    order.on("click", function() {
+        $(this)
+          .next()
+          .slideToggle("300");
+      });
 
 });
 
