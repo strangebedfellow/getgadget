@@ -1,0 +1,26 @@
+#features {
+    background-color: $screen-color;
+    .site_container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .features_divs {
+        color: $table-row-color;
+        padding: 10px;   
+        text-align: center;
+        width: 22vw;    
+    }
+    h2 {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    i {
+        font-size: 4rem;
+        margin: 20px;
+    }
+    p {
+        font-size: 1rem;
+        padding: 10px;
+        line-height: 22px;
+    }
+}

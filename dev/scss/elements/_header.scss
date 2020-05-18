@@ -1,0 +1,93 @@
+header {
+  //background-color: whitesmoke;
+  background-color: white;
+  font-size: 1.1rem;
+  //font-weight: bold;
+  color: $footerColor;
+  border-top: 1vh solid $getgadgetColor;
+  border-bottom: 1px solid $getgadgetColor;
+
+  a {
+    text-decoration: none;
+    color: $footerColor;
+  }
+
+  .logo {
+    img {
+      height: 7rem;
+    }
+  }
+
+  // .topMenu {
+  //   border: 1px solid red;
+  // }
+
+  .site_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    padding: 20px;
+
+    .topMenuLink {
+      transition: color 100ms ease;
+
+      &:hover {
+        color: $getgadgetColor;
+      }
+    }
+
+    .dropMenu {
+      background-color: $getgadgetColor;
+      display: none;
+      position: absolute;
+      left: -1px;
+      margin-top: 20px;
+      padding-left: 0;
+      width: 500px;
+      z-index: 1;
+
+      i {
+        padding-right: 10px;
+      }
+
+      li {
+        display: block;
+        font-size: 0.9rem;
+        color: white;
+        font-weight: bold;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transition: background-color 200ms ease;
+        &:hover {
+          background-color: $footerColor;
+        }
+      }
+    }
+  }
+
+  .topMenuLinkActive {
+    font-weight: bold;
+    background-color: $getgadgetColor;
+    box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, 0.1);
+    transition: 200ms ease;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+
+  .linkPointer {
+    border: 1px solid rgba(50, 50, 50, 0.05);
+    &:hover {
+      @extend .topMenuLinkActive;
+      color: white;
+    }
+  }
+}

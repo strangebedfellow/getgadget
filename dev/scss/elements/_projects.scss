@@ -1,0 +1,29 @@
+.projects {
+  line-height: 2rem;
+  height: 100%;
+
+  .site_container {
+    height: 70vh;
+    // background-image: url(../images/about1.jpg);
+    // background-repeat: no-repeat;
+    // background-size: 50%;
+    // background-position-x: right;
+    // background-position-y: bottom;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+
+  h3 {
+    font-weight: bold;
+    padding-top: 20px;
+  }
+}
+
